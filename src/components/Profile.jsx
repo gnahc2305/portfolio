@@ -1,28 +1,34 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { staggerContainer, textVariant } from "../utils/motion";
+import { staggerContainer, textVariant, slideIn } from "../utils/motion";
 
 function Profile() {
   return (
     <section>
-      <div className="mt-10 md:justify-center flex flex-col md:flex-row items-center md:items-start">
-        <div>
+      <motion.div
+        className="mt-10 md:justify-center flex flex-col md:flex-row items-center md:items-start"
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+      >
+        <motion.div variants={slideIn("left", "tween", 0.2, 1)}>
           <img src="/profile.png" alt="profile" />
-        </div>
+          {/* <motion.img src="/profile.png" alt="profile"/> */}
+        </motion.div>
 
         <div className="max-w-[400px] xl:max-w-[600px] text-center md:text-start md:px-5">
-          <motion.h1 animate={textVariant(1.1)} className="text-[50px]">
-            {/* <h1 className="text-[50px]">Andres Chang</h1> */}
+          <motion.h1 variants={textVariant(1.1)} className="text-[50px]">
             Andres Chang
           </motion.h1>
-        
-          <p>
+
+          <motion.p variants={textVariant(1.5)}>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
             omnis necessitatibus doloremque beatae totam vel vitae consequatur
             non at, provident autem nostrum itaque fugit.
-          </p>
+          </motion.p>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
