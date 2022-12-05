@@ -1,9 +1,11 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import { Navbar, Profile } from './components/index';
 
 function App() {
   return (
     <div className=''>
-      HELLO WORLD
+      <Navbar />
+      <Profile />
     </div>
   )
 }
