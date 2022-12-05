@@ -1,8 +1,8 @@
-const projects = [
-    {
-        title: '',
-        imgUrl: '',
-        description: '',
-        stack: '',
-    }
-]
+export const projects = [
+  {
+    title: "",
+    imgUrl: "",
+    description: "",
+    stack: "",
+  },
+];

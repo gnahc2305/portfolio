@@ -14,7 +14,6 @@ function Profile() {
       >
         <motion.div variants={slideIn("left", "tween", 0.2, 1)}>
           <img src="/profile.png" alt="profile" />
-          {/* <motion.img src="/profile.png" alt="profile"/> */}
         </motion.div>
 
         <div className="max-w-[400px] xl:max-w-[600px] text-center md:text-start md:px-5">
