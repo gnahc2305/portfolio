@@ -36,4 +36,12 @@ export const skills = [
     name: 'Tailwind',
     img: '/skills_img/tailwind.png',
   },
+  {
+    name: 'NPM',
+    img: '/skills_img/npm.png',
+  },
+  {
+    name: 'Jest',
+    img: '/skills_img/jest.png',
+  },
 ]
