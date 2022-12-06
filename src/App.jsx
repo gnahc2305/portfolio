@@ -9,7 +9,7 @@ function App() {
     <div className=''>
       <Navbar setLanguage={setLanguage} />
       <Profile language={language} />
-      <StackInfo />
+      <StackInfo language={language} />
       <Projects />
       <Contact />
       <Footer />
