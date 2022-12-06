@@ -3,7 +3,7 @@ import React from "react";
 import { skills, toolTipStyles } from "../constants";
 import { staggerContainer, textVariant, fadeIn } from "../utils/motion";
 
-function StackInfo({language}) {
+function StackInfo({ language, mode }) {
   return (
     <section>
       <motion.div
@@ -14,9 +14,11 @@ function StackInfo({language}) {
       >
         <motion.h1
           variants={textVariant(1.4)}
-          className="text-center mt-[120px] text-[40px]"
+          className={`text-center mt-[120px] text-[40px] ${
+            mode === "light" ? "text-black" : "text-white"
+          }`}
         >
-          {language === 'english' ? 'My Skills' : 'Mis Habilidades'}
+          {language === "english" ? "My Skills" : "Mis Habilidades"}
         </motion.h1>
 
         <div className="flex justify-center mt-[50px] gap-5 flex-wrap px-5">

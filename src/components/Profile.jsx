@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { staggerContainer, textVariant, slideIn } from "../utils/motion";
 import { aboutEn, aboutEs } from "../constants";
 
-function Profile({ language }) {
+function Profile({ language, mode }) {
   return (
     <section>
       <motion.div
@@ -18,11 +18,11 @@ function Profile({ language }) {
         </motion.div>
 
         <div className="max-w-[400px] xl:max-w-[600px] text-center md:text-start md:px-5">
-          <motion.h1 variants={textVariant(1.1)} className="text-[50px]">
+          <motion.h1 variants={textVariant(1.1)} className={`text-[50px] ${mode === 'light' ? 'text-black' : 'text-white'}`}>
             Andres Chang
           </motion.h1>
-
-          <motion.p variants={textVariant(1.5)} className='px-1 md:px-0'>
+          
+          <motion.p variants={textVariant(1.5)} className={`px-1 md:px-0 ${mode === 'light' ? 'text-black' : 'text-white'}`}>
             {/* check for language and display it */}
             {language === 'english' ? aboutEn : aboutEs}
           </motion.p>

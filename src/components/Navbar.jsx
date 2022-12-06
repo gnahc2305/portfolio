@@ -2,11 +2,13 @@ import { React, useState } from "react";
 import { motion } from "framer-motion";
 import { navVariants } from "../utils/motion";
 
-function navbar({ setLanguage }) {
-  function handleToggle() {}
-
+function navbar({ setLanguage, setMode, mode }) {
   function handleLanguage(e) {
     setLanguage(e.target.value);
+  }
+
+  function handleMode(e) {
+    mode === 'light' ? setMode('dark') : setMode('light');
   }
 
   return (
@@ -32,7 +34,7 @@ function navbar({ setLanguage }) {
       {/* <button className="rounded-xl h-[50%]">Mode</button> */}
       <input
         type="checkbox"
-        onClick={handleToggle}
+        onClick={handleMode}
         className="h-[30px] w-[30px] rounded-3xl cursor-pointer"
       />
     </motion.nav>

@@ -4,6 +4,7 @@ import { staggerContainer, slideIn } from "../utils/motion";
 
 function ProjectCard({
   project: { title, gif, description, stack, code, live, direction },
+  mode
 }) {
   return (
     <motion.div
