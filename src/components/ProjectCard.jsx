@@ -31,7 +31,7 @@ function ProjectCard({
         <p className="pt-[20px] text-[20px]">{description}</p>
         <p className="pt-[20px] text-[18px]">
           {stack.map((item) => (
-            <span className="mx-1 p-1 border-2 border-stone-900 rounded-md">
+            <span key={item} className="mx-1 p-1 border-2 border-stone-900 rounded-md">
               {item}
             </span>
           ))}
