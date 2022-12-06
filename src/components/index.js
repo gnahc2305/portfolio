@@ -4,6 +4,7 @@ import Projects from './Projects';
 import StackInfo from './StackInfo';
 import ProjectCard from './ProjectCard';
 import Contact from './Contact';
+import Footer from './Footer';
 
 export {
     Navbar,
@@ -12,4 +13,5 @@ export {
     StackInfo,
     ProjectCard,
     Contact,
+    Footer,
 }

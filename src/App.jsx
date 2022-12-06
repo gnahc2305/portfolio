@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Navbar, Profile, Projects, StackInfo, Contact } from './components/index';
+import { Navbar, Profile, Projects, StackInfo, Contact, Footer } from './components/index';
 
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
       <StackInfo />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   )
 }
