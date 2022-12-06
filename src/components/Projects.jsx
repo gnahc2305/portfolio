@@ -7,7 +7,7 @@ import { projects } from "../constants";
 
 function Projects() {
   return (
-    <section className="mt-[120px] mb-[500px]">
+    <section className="mt-[120px]">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
