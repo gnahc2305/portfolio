@@ -1,6 +1,7 @@
 import { React } from "react";
 import { motion } from "framer-motion";
 import { navVariants } from "../utils/motion";
+import { sun, moon } from "../constants";
 
 function navbar({ setLanguage, setMode, mode }) {
   function handleLanguage(e) {
@@ -37,11 +38,13 @@ function navbar({ setLanguage, setMode, mode }) {
         </select>
       </form>
 
-      <input
-        type="checkbox"
+      <button
+        type="button"
         onClick={handleMode}
-        className="h-[30px] w-[30px] rounded-3xl cursor-pointer" // fixed top-3.5 right-10
-      />
+        className={`h-[40px] w-[40px] rounded-xl p-1.5 cursor-pointer ${mode === 'light' ? 'bg-violet-500' : 'bg-yellow-400' }`} // fixed top-3.5 right-10
+      >
+        {mode === 'light' ? moon : sun}
+      </button>
     </motion.div>
   );
 }
