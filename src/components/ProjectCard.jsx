@@ -18,14 +18,22 @@ function ProjectCard({
       <div className="w-[400px] max-w-[400px] px-10 pt-6 md:pt-0 md:px-5">
         <h1 className="text-[30px]">{title}</h1>
         <p className="pt-[20px] text-[20px]">{description}</p>
-        <p className="pt-[20px] text-[18px]">Made with: {stack}</p>
+        <p className="pt-[20px] text-[18px]">
+          {stack.map((item) => (
+            <span className="mx-1 p-1 border-2 border-stone-900 rounded-md">{item}</span>
+          ))}
+        </p>
 
         <div className="mt-[50px]">
           <a href={code} className="px-2 text-[20px]">
-            <button className="text-white bg-blue-700 p-2 rounded-2xl hover:bg-blue-900">Repository</button>
+            <button className="text-white bg-blue-700 p-3 rounded-2xl hover:bg-blue-900">
+              Repository
+            </button>
           </a>
           <a href={live} className="px-5 text-[20px]">
-            <button className="text-white bg-blue-700 p-2 rounded-2xl hover:bg-blue-900">Live</button>
+            <button className="text-white bg-blue-700 p-3 rounded-2xl hover:bg-blue-900">
+              Live
+            </button>
           </a>
         </div>
       </div>
