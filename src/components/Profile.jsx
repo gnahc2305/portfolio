@@ -1,8 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { staggerContainer, textVariant, slideIn } from "../utils/motion";
+import { aboutEn, aboutEs } from "../constants";
 
-function Profile() {
+function Profile({ language }) {
   return (
     <section>
       <motion.div
@@ -22,9 +23,8 @@ function Profile() {
           </motion.h1>
 
           <motion.p variants={textVariant(1.5)} className='px-1 md:px-0'>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
-            omnis necessitatibus doloremque beatae totam vel vitae consequatur
-            non at, provident autem nostrum itaque fugit.
+            {/* check for language and display it */}
+            {language === 'english' ? aboutEn : aboutEs}
           </motion.p>
         </div>
       </motion.div>

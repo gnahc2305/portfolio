@@ -3,10 +3,12 @@ import { Navbar, Profile, Projects, StackInfo, Contact, Footer } from './compone
 
 
 function App() {
+  const [language, setLanguage] = useState("english");
+
   return (
     <div className=''>
-      <Navbar />
-      <Profile />
+      <Navbar setLanguage={setLanguage} />
+      <Profile language={language} />
       <StackInfo />
       <Projects />
       <Contact />

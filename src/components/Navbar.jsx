@@ -1,9 +1,13 @@
-import React from "react";
+import { React, useState } from "react";
 import { motion } from "framer-motion";
 import { navVariants } from "../utils/motion";
 
-function navbar() {
+function navbar({ setLanguage }) {
   function handleToggle() {}
+
+  function handleLanguage(e) {
+    setLanguage(e.target.value);
+  }
 
   return (
     <motion.nav
@@ -14,14 +18,23 @@ function navbar() {
     >
       <form>
         <label htmlFor="language">Language: </label>
-        <select name="language" id="language" className="cursor-pointer">
+        <select
+          onChange={handleLanguage}
+          name="language"
+          id="language"
+          className="cursor-pointer"
+        >
           <option value="english">English</option>
           <option value="spanish">Spanish</option>
         </select>
       </form>
 
       {/* <button className="rounded-xl h-[50%]">Mode</button> */}
-      <input type="checkbox" onClick={handleToggle} className='h-[30px] w-[30px] rounded-3xl cursor-pointer' />
+      <input
+        type="checkbox"
+        onClick={handleToggle}
+        className="h-[30px] w-[30px] rounded-3xl cursor-pointer"
+      />
     </motion.nav>
   );
 }

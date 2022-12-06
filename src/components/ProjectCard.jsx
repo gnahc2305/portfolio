@@ -13,7 +13,9 @@ function ProjectCard({
       viewport={{ once: true, amount: 0.25 }}
       className={`mt-[150px] flex flex-col items-center md:items-start md:flex-row justify-center ${direction}`}
     >
+      
       <motion.div
+      // the animation changes depending of the flex direction, 
         variants={slideIn(direction === "" ? "left" : "right", "tween", 0.2, 1)}
       >
         <img
