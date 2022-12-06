@@ -8,7 +8,7 @@ function App() {
       <Navbar />
       <Profile />
       <StackInfo />
-      {/* <Projects /> */}
+      <Projects />
     </div>
   )
 }

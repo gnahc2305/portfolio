@@ -21,20 +21,20 @@ function StackInfo() {
 
         <div className="flex justify-center mt-[50px] gap-5 flex-wrap px-5">
           {skills.map((skill, index) => (
-          <>
-            <motion.div
-              variants={fadeIn("left", "spring", 1, index * 0.95)}
-              className={toolTipStyles}
-              data-tip={skill.name}
-            >
-              <img
-                src={skill.img}
-                alt={skill.name}
-                key={skill.name}
-                className="h-[100px] w-[100px]"
-              />
-            </motion.div>
-          </>
+            <div key={skill.name}>
+              <motion.div
+                variants={fadeIn("left", "spring", 1, index * 0.95)}
+                className={toolTipStyles}
+                data-tip={skill.name}
+              >
+                <img
+                  src={skill.img}
+                  alt={skill.name}
+                  key={skill.name}
+                  className="h-[100px] w-[100px]"
+                />
+              </motion.div>
+            </div>
           ))}
         </div>
       </motion.div>
