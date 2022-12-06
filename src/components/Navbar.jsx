@@ -10,6 +10,7 @@ function navbar({ setLanguage, setMode, mode }) {
 
   function handleMode(e) {
     mode === "light" ? setMode("dark") : setMode("light");
+    localStorage.setItem('theme', mode === "light" ? "dark" : "light");
   }
 
   return (

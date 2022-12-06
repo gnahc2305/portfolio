@@ -12,7 +12,7 @@ function Projects({ mode }) {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.25 }}
       >
         <TypingText title="Projects" textStyles={`text-center text-[40px] ${mode === 'light' ? 'text-black' : 'text-white'}`} />
 
