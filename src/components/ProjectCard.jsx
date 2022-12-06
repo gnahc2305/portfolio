@@ -31,22 +31,21 @@ function ProjectCard({
         <p className="pt-[20px] text-[20px]">{description}</p>
         <p className="pt-[20px] text-[18px]">
           {stack.map((item) => (
-            <span key={item} className="mx-1 p-1 border-2 border-stone-900 rounded-md">
+            <span
+              key={item}
+              className="mx-1 p-1 border-2 border-stone-900 rounded-md"
+            >
               {item}
             </span>
           ))}
         </p>
 
-        <div className="mt-[50px]">
+        <div className="mt-[50px] flex">
           <a href={code} className="px-2 text-[20px]">
-            <button className="text-white bg-blue-700 p-3 rounded-2xl hover:bg-blue-900">
-              Repository
-            </button>
+            <img src="/github.png" alt="repo" className="h-[40px] w-[40px]" />
           </a>
           <a href={live} className="px-5 text-[20px]">
-            <button className="text-white bg-blue-700 p-3 rounded-2xl hover:bg-blue-900">
-              Live
-            </button>
+            <img src="/link.png" alt="repo" className="h-[40px] w-[40px]" />
           </a>
         </div>
       </motion.div>
