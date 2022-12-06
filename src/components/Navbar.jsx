@@ -22,18 +22,19 @@ function navbar({ setLanguage, setMode, mode }) {
       className="h-14 w-[100%] flex justify-between items-center px-6"
     >
       <form>
-        <label
+        {/* <label
           htmlFor="language"
           className={mode === "light" ? "text-black" : "text-white"}
         >
           Language:{" "}
-        </label>
+        </label> */}
         <select
           onChange={handleLanguage}
           name="language"
           id="language"
-          className="cursor-pointer"
+          className="cursor-pointer p-[10px] rounded-sm focus:outline-none"
         >
+          <option value="0" className="hidden">Language: </option>
           <option value="english">English</option>
           <option value="spanish">Spanish</option>
         </select>
