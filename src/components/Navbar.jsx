@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React } from "react";
 import { motion } from "framer-motion";
 import { navVariants } from "../utils/motion";
 
@@ -8,18 +8,24 @@ function navbar({ setLanguage, setMode, mode }) {
   }
 
   function handleMode(e) {
-    mode === 'light' ? setMode('dark') : setMode('light');
+    mode === "light" ? setMode("dark") : setMode("light");
   }
 
   return (
-    <motion.nav
+    <motion.div
       variants={navVariants}
       initial="hidden"
       whileInView="show"
+      viewport={{ once: true }}
       className="h-14 w-[100%] flex justify-between items-center px-6"
     >
       <form>
-        <label htmlFor="language">Language: </label>
+        <label
+          htmlFor="language"
+          className={mode === "light" ? "text-black" : "text-white"}
+        >
+          Language:{" "}
+        </label>
         <select
           onChange={handleLanguage}
           name="language"
@@ -31,13 +37,12 @@ function navbar({ setLanguage, setMode, mode }) {
         </select>
       </form>
 
-      {/* <button className="rounded-xl h-[50%]">Mode</button> */}
       <input
         type="checkbox"
         onClick={handleMode}
-        className="h-[30px] w-[30px] rounded-3xl cursor-pointer"
+        className="h-[30px] w-[30px] rounded-3xl cursor-pointer" // fixed top-3.5 right-10
       />
-    </motion.nav>
+    </motion.div>
   );
 }
 

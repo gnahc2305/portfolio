@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer() {
+function Footer({ mode }) {
   return (
     <div className="py-5 text-center">
       <div className="container max-w-screen-lg mx-auto">
@@ -32,7 +32,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <p className="text-sm mt-2  opacity-70">
+      <p className={`first-letter:text-sm mt-2 opacity-70 ${mode === 'light' ? 'text-black' : 'text-white'}`}>
         &copy; {new Date().getFullYear()} Andres Chang. All rights reserved.
       </p>
     </div>

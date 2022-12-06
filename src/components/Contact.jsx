@@ -1,6 +1,6 @@
 import React from "react";
 
-function Contact() {
+function Contact({ mode }) {
   return (
     <div className="flex flex-col mb-10 mx-5 mt-[120px]">
       <div className="flex justify-center items-center">
@@ -9,24 +9,36 @@ function Contact() {
           method="POST"
           className="flex flex-col w-full md:w-7/12"
         >
-          <h1 className="text-[40px] mb-[5px]">Contact</h1>
+          <h1
+            className={`text-[40px] mb-[5px] ${
+              mode === "light" ? "text-black" : "text-white"
+            }`}
+          >
+            Contact
+          </h1>
           <input
             type="text"
             name="name"
             placeholder="Name"
-            className="p-2 bg-transparent border-2 border-stone-900 rounded-md focus:outline-none"
+            className={`p-2 bg-transparent border-2 border-stone-900 rounded-md focus:outline-none ${
+              mode === "light" ? "text-black" : "text-white"
+            }`}
           />
           <input
             type="text"
             name="email"
             placeholder="Email"
-            className="my-2 p-2 bg-transparent border-2 border-stone-900 rounded-md focus:outline-none"
+            className={`my-2 p-2 bg-transparent border-2 border-stone-900 rounded-md focus:outline-none ${
+              mode === "light" ? "text-black" : "text-white"
+            }`}
           />
           <textarea
             name="message"
             placeholder="Message"
             rows="10"
-            className="p-2 mb-4 bg-transparent border-2 border-stone-900 rounded-md focus:outline-none"
+            className={`p-2 mb-4 bg-transparent border-2 border-stone-900 rounded-md focus:outline-none ${
+              mode === "light" ? "text-black" : "text-white"
+            }`}
           />
           <button
             type="submit"

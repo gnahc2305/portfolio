@@ -18,7 +18,7 @@ function Profile({ language, mode }) {
         </motion.div>
 
         <div className="max-w-[400px] xl:max-w-[600px] text-center md:text-start md:px-5">
-          <motion.h1 variants={textVariant(1.1)} className={`text-[50px] ${mode === 'light' ? 'text-black' : 'text-white'}`}>
+          <motion.h1 variants={textVariant(1.1)} className={`text-[50px] ${mode === 'light' ? 'text-[#E40066]' : 'text-[#E40066]'}`}>
             Andres Chang
           </motion.h1>
           

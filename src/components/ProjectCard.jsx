@@ -28,7 +28,7 @@ function ProjectCard({
 
       <motion.div
         variants={slideIn(direction === "" ? "left" : "right", "tween", 0.2, 1)}
-        className="w-[400px] max-w-[400px] px-10 pt-6 md:pt-0 md:px-5"
+        className={`w-[400px] max-w-[400px] px-10 pt-6 md:pt-0 md:px-5 ${mode === 'light' ? 'text-black' : 'text-white'}`}
       >
         <h1 className="text-[30px]">{title}</h1>
         <p className="pt-[20px] text-[20px]">{description}</p>
@@ -45,7 +45,7 @@ function ProjectCard({
 
         <div className="mt-[50px] flex">
           <a href={code} className="px-2 text-[20px]">
-            <img src="/github.png" alt="repo" className="h-[40px] w-[40px]" />
+            <img src="/github.png" alt="repo" className="h-[40px] w-[40px] text-white" />
           </a>
           <a href={live} className="px-5 text-[20px]">
             <img src="/link.png" alt="repo" className="h-[40px] w-[40px]" />
