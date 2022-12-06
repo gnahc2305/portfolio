@@ -17,10 +17,10 @@ function Projects() {
         <TypingText title="Projects" textStyles="text-center text-[40px]" />
 
         {projects.map((project) => (
-          <ProjectCard key={project.title} project={project} />
+          <div key={project.title} className=''>
+            <ProjectCard key={project.title} project={project} />
+          </div>
         ))}
-
-
       </motion.div>
     </section>
   );

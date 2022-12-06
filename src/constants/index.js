@@ -1,11 +1,30 @@
 export const projects = [
   {
     title: "Modern landing page",
-    gif: "",
-    description: "",
-    stack: ['Next 13', 'Framer Motion', 'Tailwind'],
+    gif: "/project_gif/project1.gif",
+    description: "Modern demo website with animations on scroll",
+    stack: 'Next 13, Framer Motion, Tailwind',
     code: "https://github.com/gnahc2305/demo-website",
     live: 'https://demo-website-ivory.vercel.app/',
+    direction: '',
+  },
+  {
+    title: "Etch a Sketch",
+    gif: "/project_gif/project2.gif",
+    description: "Website simulating an etch a sketch toy",
+    stack: 'JavaScript, HTML, CSS',
+    code: "https://github.com/gnahc2305/etch-a-sketch",
+    live: 'https://gnahc2305.github.io/etch-a-sketch/',
+    direction: 'md:flex-row-reverse',
+  },
+  {
+    title: "Simple Calculator",
+    gif: "/project_gif/project3.gif",
+    description: "Capable of adding, subtracting, multiplying, and dividing",
+    stack: 'JavaScript, HTML, CSS',
+    code: "https://github.com/gnahc2305/calculator",
+    live: 'https://gnahc2305.github.io/calculator/',
+    direction: '',
   },
 ];
 

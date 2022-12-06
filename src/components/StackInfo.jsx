@@ -30,7 +30,6 @@ function StackInfo() {
                 <img
                   src={skill.img}
                   alt={skill.name}
-                  key={skill.name}
                   className="h-[100px] w-[100px]"
                 />
               </motion.div>
