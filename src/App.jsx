@@ -4,13 +4,24 @@ import { Navbar, Profile, Projects, StackInfo, Contact, Footer } from './compone
 
 
 function App() {
-  const [language, setLanguage] = useState("english");
-  const [mode, setMode] = useState('light');
+  const [language, setLanguage] = useState(null);
+  const [mode, setMode] = useState(null);
 
   useEffect(() => {
-    // console.log(localStorage.getItem('mode'));
-    setMode(localStorage.getItem('theme'))
-    setLanguage(localStorage.getItem('language'));
+    // if there is no local storage, set it to english and lightmode
+    if (localStorage.getItem('theme') === null) {
+      localStorage.setItem('theme', 'light');
+    } else {
+      setMode(localStorage.getItem('theme'))
+    }
+    
+    if (localStorage.getItem('language') === null) {
+      localStorage.setItem('language', 'english');
+    } else {
+      setLanguage(localStorage.getItem('language'));
+    }
+
+
   }, [mode])
 
   return (
