@@ -70,11 +70,19 @@ export const skills = [
 export const toolTipStyles =
   "relative before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible";
 
-export const aboutEn =
-  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis necessitatibus doloremque beatae totam vel vitae consequatur non at, provident autem nostrum itaque fugit.";
+export const aboutEn = (
+  <>
+    <h2 className="mb-5">I'm a passionate web developer from Peru.</h2>
+    <p>Ever since I was a kid I've always been amazed by tech and how it works. I am constantly learning new technologies and methods to improve myself and create aweosome things.</p>
+  </>
+)
 
-export const aboutEs =
-  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid omnis necessitatibus doloremque beatae totam vel vitae consequatur non at, provident autem nostrum itaque fugit.";
+export const aboutEs = (
+  <>
+    <h2 className="mb-5">Soy un web developer apasionado de Peru.</h2>
+    <p>Desde pequeño siempre me han asombrado las computadoras y como funcionan. Estoy constantemente aprendiendo nuevas tecnologias y metodos para mejorarme a mi mismo y crear cosas geniales.</p>
+  </>
+)
 
 export const sun = (
   <svg
