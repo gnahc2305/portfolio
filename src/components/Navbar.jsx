@@ -6,6 +6,7 @@ import { sun, moon } from "../constants";
 function navbar({ setLanguage, setMode, mode }) {
   function handleLanguage(e) {
     setLanguage(e.target.value);
+    localStorage.setItem('language', e.target.value);
   }
 
   function handleMode(e) {

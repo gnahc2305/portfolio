@@ -5,7 +5,7 @@ import { staggerContainer } from "../utils/motion";
 import ProjectCard from "./ProjectCard";
 import { projects } from "../constants";
 
-function Projects({ mode }) {
+function Projects({ mode, language }) {
   return (
     <section className="mt-[120px]">
       <motion.div
@@ -14,7 +14,7 @@ function Projects({ mode }) {
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
       >
-        <TypingText title="Projects" textStyles={`text-center text-[40px] ${mode === 'light' ? 'text-black' : 'text-white'}`} />
+        <TypingText title={language === 'english' ? 'Projects' : 'Proyectos'} textStyles={`text-center text-[40px] ${mode === 'light' ? 'text-black' : 'text-white'}`} />
 
         {projects.map((project) => (
           <div key={project.title} className=''>

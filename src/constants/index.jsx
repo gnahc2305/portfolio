@@ -73,14 +73,14 @@ export const toolTipStyles =
 export const aboutEn = (
   <>
     <h2 className="mb-5">I'm a passionate web developer from Peru.</h2>
-    <p>Ever since I was a kid I've always been amazed by tech and how it works. I am constantly learning new technologies and methods to improve myself and create aweosome things.</p>
+    <p>Ever since I was a kid I've always been amazed by tech and how it works. I am constantly learning new technologies and methods to improve myself and create awesome things.</p>
   </>
 )
 
 export const aboutEs = (
   <>
-    <h2 className="mb-5">Soy un web developer apasionado de Peru.</h2>
-    <p>Desde pequeño siempre me han asombrado las computadoras y como funcionan. Estoy constantemente aprendiendo nuevas tecnologias y metodos para mejorarme a mi mismo y crear cosas geniales.</p>
+    <h2 className="mb-5">Soy un web developer apasionado de Perú.</h2>
+    <p>Desde pequeño siempre me han asombrado las computadoras y como funcionan. Estoy constantemente aprendiendo nuevas tecnologías y métodos para mejorarme a mi mismo y crear cosas geniales.</p>
   </>
 )
 

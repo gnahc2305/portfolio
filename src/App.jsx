@@ -10,6 +10,7 @@ function App() {
   useEffect(() => {
     // console.log(localStorage.getItem('mode'));
     setMode(localStorage.getItem('theme'))
+    setLanguage(localStorage.getItem('language'));
   }, [mode])
 
   return (
@@ -17,8 +18,8 @@ function App() {
       <Navbar setLanguage={setLanguage} setMode={setMode} mode={mode} />
       <Profile language={language} mode={mode} />
       <StackInfo language={language} mode={mode} />
-      <Projects mode={mode} />
-      <Contact mode={mode} />
+      <Projects mode={mode} language={language} />
+      <Contact mode={mode} language={language} />
       <Footer mode={mode} />
     </div>
   )

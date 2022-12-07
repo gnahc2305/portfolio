@@ -22,10 +22,10 @@ function Profile({ language, mode }) {
             Andres Chang
           </motion.h1>
           
-          <motion.p variants={textVariant(1.5)} className={`px-1 md:px-0 text-[20px] ${mode === 'light' ? 'text-black' : 'text-white'}`}>
+          <motion.div variants={textVariant(1.5)} className={`px-1 md:px-0 text-[20px] ${mode === 'light' ? 'text-black' : 'text-white'}`}>
             {/* check for language and display it */}
             {language === 'english' ? aboutEn : aboutEs}
-          </motion.p>
+          </motion.div>
         </div>
       </motion.div>
     </section>
