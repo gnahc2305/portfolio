@@ -41,7 +41,7 @@ function Contact({ mode, language }) {
             }`}
           />
           <button
-            type='button'
+            // type='button'
             className="text-center inline-block px-8 py-3 w-max text-base font-medium rounded-md text-white bg-gradient-to-r from-blue-500 to-black"
           >
             {language === 'english' ? 'Submit' : 'Mandar'}
