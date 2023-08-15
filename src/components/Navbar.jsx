@@ -23,12 +23,6 @@ function navbar({ setLanguage, setMode, mode }) {
       className="h-14 w-[100%] flex justify-between items-center px-6"
     >
       <form>
-        {/* <label
-          htmlFor="language"
-          className={mode === "light" ? "text-black" : "text-white"}
-        >
-          Language:{" "}
-        </label> */}
         <select
           onChange={handleLanguage}
           name="language"
