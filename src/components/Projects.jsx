@@ -18,7 +18,7 @@ function Projects({ mode, language }) {
 
         {projects.map((project) => (
           <div key={project.title} className=''>
-            <ProjectCard key={project.title} mode={mode} project={project} />
+            <ProjectCard key={project.title} mode={mode} project={project} language={language} />
           </div>
         ))}
       </motion.div>

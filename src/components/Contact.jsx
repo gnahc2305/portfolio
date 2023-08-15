@@ -18,6 +18,7 @@ function Contact({ mode, language }) {
           </h1>
           <input
             type="text"
+            required
             name="name"
             placeholder={language === 'english' ? 'Name' : 'Nombre'}
             className={`p-2 bg-transparent border-2 border-stone-900 rounded-md focus:outline-none ${
@@ -25,7 +26,8 @@ function Contact({ mode, language }) {
             }`}
           />
           <input
-            type="text"
+            type="email"
+            required
             name="email"
             placeholder="Email"
             className={`my-2 p-2 bg-transparent border-2 border-stone-900 rounded-md focus:outline-none ${
@@ -34,6 +36,7 @@ function Contact({ mode, language }) {
           />
           <textarea
             name="message"
+            required
             placeholder={language === 'english' ? 'Message' : 'Mensaje'}
             rows="10"
             className={`p-2 mb-4 bg-transparent border-2 border-stone-900 rounded-md focus:outline-none ${

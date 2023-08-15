@@ -1,4 +1,3 @@
-# portfolio
-Personal Portfolio
+# Personal Portfolio
 
 Live: https://andreschangm.com/

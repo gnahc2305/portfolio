@@ -1,29 +1,32 @@
 export const projects = [
   {
-    title: "Modern landing page",
+    title: "Gym Tracker",
     gif: "/project_gif/project1.gif",
-    description: "Modern demo website with animations on scroll",
-    stack: ["Next 13", "Framer Motion", "Tailwind"],
-    code: "https://github.com/gnahc2305/demo-website",
-    live: "https://demo-website-ivory.vercel.app/",
+    description: "Workout tracking website that logs workouts and saves them to your account. CS50 Final project",
+    description_es: "Pagina para guardar rutinas de ejercicios. Proyecto final de CS50",
+    stack: ["NextJs", "TypeScript", "Prisma", "Neon DB"],
+    code: "https://github.com/gnahc2305/gym-tracker",
+    live: "https://gym-tracker-adzb0h5se-gnahc2305.vercel.app/",
     direction: "",
   },
   {
-    title: "Etch a Sketch",
+    title: "Modern landing page",
     gif: "/project_gif/project2.gif",
-    description: "Website simulating an etch a sketch toy",
-    stack: ["JavaScript", "HTML", "CSS"],
-    code: "https://github.com/gnahc2305/etch-a-sketch",
-    live: "https://gnahc2305.github.io/etch-a-sketch/",
+    description: "Modern demo website with animations on scroll",
+    description_es: "Pagina demo con animaciones",
+    stack: ["NextJs", "Framer Motion", "Tailwind"],
+    code: "https://github.com/gnahc2305/demo-website",
+    live: "https://demo-website-ivory.vercel.app/",
     direction: "md:flex-row-reverse",
   },
   {
-    title: "Simple Calculator",
+    title: "E-Commerce",
     gif: "/project_gif/project3.gif",
-    description: "Capable of adding, subtracting, multiplying, and dividing",
-    stack: ["JavaScript", "HTML", "CSS"],
-    code: "https://github.com/gnahc2305/calculator",
-    live: "https://gnahc2305.github.io/calculator/",
+    description: "Mock e-commerce website with sanity as a CMS",
+    description_es: "Demo de una tienda online, usa sanity como un CMS",
+    stack: ["NextJs", "Sanity", "Stripe"],
+    code: "https://github.com/gnahc2305/ecommerce",
+    live: "https://ecommerce-f4zn357eu-gnahc2305.vercel.app/",
     direction: "",
   },
 ];
@@ -32,6 +35,14 @@ export const skills = [
   {
     name: "JavaScript",
     img: "/skills_img/js.png",
+  },
+  {
+    name: "TypeScript",
+    img: "/skills_img/typescript.png",
+  },
+  {
+    name: "NextJs",
+    img: "/skills_img/nextjs.png",
   },
   {
     name: "HTML",
@@ -44,6 +55,14 @@ export const skills = [
   {
     name: "React",
     img: "/skills_img/react.png",
+  },
+  {
+    name: "Prisma",
+    img: "/skills_img/prisma.png",
+  },
+  {
+    name: "PostgreSQL",
+    img: "/skills_img/postgresql.png",
   },
   {
     name: "Git",

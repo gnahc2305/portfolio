@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import { staggerContainer, slideIn } from "../utils/motion";
 
 function ProjectCard({
-  project: { title, gif, description, stack, code, live, direction },
-  mode
+  project: { title, gif, description, description_es, stack, code, live, direction },
+  mode, language
 }) {
   return (
     <motion.div
@@ -31,7 +31,7 @@ function ProjectCard({
         className={`w-[400px] max-w-[400px] px-10 pt-6 md:pt-0 md:px-5 ${mode === 'light' ? 'text-black' : 'text-white'}`}
       >
         <h1 className="text-[30px]">{title}</h1>
-        <p className="pt-[20px] text-[20px]">{description}</p>
+        <p className="pt-[20px] text-[20px]">{language === 'english' ? `${description}` : `${description_es}`}</p>
         <p className="pt-[20px] text-[18px]">
           {stack.map((item) => (
             <span
