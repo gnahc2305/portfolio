@@ -1,4 +1,5 @@
 import React from "react";
+import Pdf from "../CV/AndresChangCV.pdf";
 
 function Footer({ mode }) {
   return (
@@ -9,6 +10,7 @@ function Footer({ mode }) {
             <a
               href="https://github.com/gnahc2305"
               className="bg-stone-900 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full"
+              title="Github"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -29,10 +31,21 @@ function Footer({ mode }) {
                 </g>
               </svg>
             </a>
+            <a
+              href={Pdf}
+              target="_blank"
+              className={`p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full ${mode === "light" ? "bg-stone-300" : "bg-white"}`}
+            >
+              <img src="/resume.png" alt="Resume" width='20px' height='20px' title='Resume' />
+            </a>
           </div>
         </div>
       </div>
-      <p className={`first-letter:text-sm mt-2 opacity-70 ${mode === 'light' ? 'text-black' : 'text-white'}`}>
+      <p
+        className={`first-letter:text-sm mt-2 opacity-70 ${
+          mode === "light" ? "text-black" : "text-white"
+        }`}
+      >
         &copy; {new Date().getFullYear()} Andres Chang. All rights reserved.
       </p>
     </div>
