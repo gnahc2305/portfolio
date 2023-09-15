@@ -14,7 +14,7 @@ function Profile({ language, mode }) {
         viewport={{ once: false, amount: 0.25 }}
       >
         <motion.div variants={slideIn("left", "tween", 0.2, 1)}>
-          <img src="/p2.png" alt="profile" className="rounded-[50%] h-[350px] w-[35 0px]" />
+          <img src="/pp.png" alt="profile" className="rounded-[50%] h-[350px] w-[35 0px]" />
         </motion.div>
 
         <div className="max-w-[400px] xl:max-w-[600px] text-center md:text-start md:px-5">
