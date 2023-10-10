@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { Navbar, Profile, Projects, StackInfo, Contact, Footer } from './components/index';
+import { Navbar, Profile, Projects, StackInfo, Contact, Footer, Timeline } from './components/index';
 
 
 function App() {
@@ -25,11 +25,12 @@ function App() {
   }, [mode])
 
   return (
-    <div className={`${mode === 'light' ? 'bg-white' : 'bg-[#083C5D]'} max-w-full`}>
+    <div className={`${mode === 'light' ? 'bg-white' : 'bg-[#272c2e]'} max-w-full`}>
       <Navbar setLanguage={setLanguage} setMode={setMode} mode={mode} />
       <Profile language={language} mode={mode} />
       <StackInfo language={language} mode={mode} />
       <Projects mode={mode} language={language} />
+      <Timeline mode={mode} language={language} />
       <Contact mode={mode} language={language} />
       <Footer mode={mode} />
     </div>

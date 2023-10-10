@@ -44,10 +44,10 @@ function ProjectCard({
         </p>
 
         <div className="mt-[50px] flex">
-          <a href={code} className="px-2 text-[20px]">
+          <a href={code} className="px-2 text-[20px]" target="_blank">
             <img src="/github.png" alt="repo" className="h-[40px] w-[40px] text-white" />
           </a>
-          <a href={live} className="px-5 text-[20px]">
+          <a href={live} className="px-5 text-[20px]" target="_blank">
             <img src="/link.png" alt="repo" className="h-[40px] w-[40px]" />
           </a>
         </div>

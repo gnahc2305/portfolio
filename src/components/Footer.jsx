@@ -1,5 +1,5 @@
 import React from "react";
-import Pdf from "../CV/AndresChangCV.pdf";
+import Pdf from "../CV/AndresChangCV_en.pdf";
 
 function Footer({ mode }) {
   return (
