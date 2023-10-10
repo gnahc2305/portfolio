@@ -3,7 +3,7 @@ export default [
     duration: "Today",
     duracion: "Hoy",
     title: "Preparing for CPA diploma at Seneca College",
-    titulo: "Preparandome para el programa CPA en Seneca College",
+    titulo: "Preparándome para el programa CPA en Seneca College",
     details:
       "Starting May 2024, enrolled at Seneca College in Toronto for the Computer Programming & Analysis Advanced Diploma.",
     detalles:
