@@ -16,7 +16,7 @@ function Timeline({ mode, language }) {
           viewport={{ once: true, amount: 0.25 }}
         >
           <TypingText
-            title="Timeline"
+            title={language === "english" ? "Timeline" : "Línea de Tiempo"}
             textStyles={`text-center text-[40px] mb-20 ${
               mode === "light" ? "text-black" : "text-white"
             }`}

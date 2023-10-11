@@ -1,7 +1,7 @@
 export default [
   {
-    duration: "Today",
-    duracion: "Hoy",
+    duration: "Currently",
+    duracion: "Actualmente",
     title: "Preparing for CPA diploma at Seneca College",
     titulo: "Preparándome para el programa CPA en Seneca College",
     details:
