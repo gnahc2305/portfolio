@@ -22,6 +22,7 @@ function Timeline({ mode, language }) {
             }`}
           />
         </motion.div>
+
         {timeline.map((item) => (
           <TimelineItem
             key={item.title}

@@ -14,7 +14,7 @@ export const projects = [
     gif: "/project_gif/project2.gif",
     description: "Workout tracking website that logs workouts and saves them to your account. CS50 Final project",
     description_es: "Página para guardar rutinas de ejercicios. Proyecto final de CS50",
-    stack: ["NextJs", "TypeScript", "Prisma", "Neon DB"],
+    stack: ["NextJs", "TypeScript", "Prisma", "NeonDB"],
     code: "https://github.com/gnahc2305/gym-tracker",
     live: "https://gym-tracker-adzb0h5se-gnahc2305.vercel.app/",
     direction: "md:flex-row-reverse",
@@ -67,10 +67,6 @@ export const skills = [
   {
     name: "Git",
     img: "/skills_img/git.png",
-  },
-  {
-    name: "Webpack",
-    img: "/skills_img/webpack.png",
   },
   {
     name: "Tailwind",
