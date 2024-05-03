@@ -31,13 +31,21 @@ function Footer({ mode }) {
                 </g>
               </svg>
             </a>
-            <a
+            {/* <a
               href={Pdf}
               target="_blank"
-              className={`p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full ${mode === "light" ? "bg-stone-300" : "bg-white"}`}
+              className={`p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full ${
+                mode === "light" ? "bg-stone-300" : "bg-white"
+              }`}
             >
-              <img src="/resume.png" alt="Resume" width='20px' height='20px' title='Resume' />
-            </a>
+              <img
+                src="/resume.png"
+                alt="Resume"
+                width="20px"
+                height="20px"
+                title="Resume"
+              />
+            </a> */}
           </div>
         </div>
       </div>
